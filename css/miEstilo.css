@@ -1,15 +1,17 @@
 body{
-	background-image: url(../img/matrix.jpg);
+	/*background-image: url(../img/matrix.jpg);*/
+	 background-color: #1E90FF;
 	 height: 100%; 
 	 width: 100%; 
 }
 
 #contenedor{
-	width: 750px;
+	width: 850px;
 	margin: 0 auto;
 	top: 50px;
 }
 
 #descripcion{
 	font-family: monospace;
+	margin-left: 15px;
 }

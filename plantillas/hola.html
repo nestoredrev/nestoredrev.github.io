@@ -1,0 +1,89 @@
+<div class="row">
+	<div class="col s12 m12 l12">
+		 <h2 class="header center-align">Currículum Vitae</h2>
+	    <div class="card horizontal" style="text-align: center; display: inline-block;">
+	      <div class="card-image" style="max-width: 40%; display: inherit;">
+	         <img materialboxed class="materialboxed responsive-img" width="650" src="{{personalInfo.foto}}" alt="fotoDePerfil" title="Ver foto">
+	      </div>
+	      <div class="card-stacked">
+	        <div class="card-content">	
+				<p class="flow-text"><b>{{personalInfo.nombre}}</b></p>
+				<span>{{personalInfo.oficio}}</span>
+				<br><br>
+				<i class="fa fa-birthday-cake" aria-hidden="true"></i><span id="descripcion">{{personalInfo.fechaNac}}</span>
+				<br>
+				<i class="fa fa-home" aria-hidden="true"></i><span id="descripcion">{{personalInfo.direccion}}</span>
+				<br>
+				<i class="fa fa-phone" aria-hidden="true"></i><a id="descripcion" href="tel:{{personalInfo.telefono}}" target="_blank">{{personalInfo.telefono}}</a>
+				<br>
+				<i class="fa fa-envelope" aria-hidden="true"></i><a id="descripcion" href="mailto:{{personalInfo.email}}" target="_blank">{{personalInfo.email}}</a>
+				<br>
+				<i class="fa fa-skype" aria-hidden="true"></i><span id="descripcion">{{personalInfo.skype}}</span>
+				<br>
+				<i class="fa fa-github" aria-hidden="true"></i><a id="descripcion" href="{{personalInfo.github}}" target="_blank">{{personalInfo.github}}</a>
+				<br>
+				<i class="fa fa-linkedin" aria-hidden="true"></i><a id="descripcion" href="{{personalInfo.linkedin}}" target="_blank">{{personalInfo.linkedin}}</a>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+</div>
+
+<!-- EXPERIENCIA -->
+<div class="row">
+	<div class="col s12 m12 l12">
+		<h4 class="header">Experiencia</h4>
+	  <div class="card" ng-repeat="item in experiencia">
+	    <div class="card-content">
+	      <p><span><b>Oficio: </b></span>{{item.oficio}}</p>
+	      <p ng-show="item.lugar.length > 150"><b>Descripción: </b></span> {{item.lugar}}</p>
+	      <p ng-show="item.lugar.length < 150"><b>Lugar: </b></span> {{item.lugar}}</p>
+	      <p><b>Periodo: </b></span>{{item.periodo}}</p>
+	    </div>
+	  </div>
+	</div>	
+</div>
+<!-- FIN EXPERIENCIA -->
+
+<!-- EDUCACIÓN -->
+<div class="row">
+	<div class="col s12 m12 l12">
+		<h4 class="header">Educación</h4>
+	  <div class="card" ng-repeat="item in educacion">
+	    <div class="card-content">
+	      <p><span><b>Titulo: </b></span>{{item.titulo}}</p>
+	      <p><b>Lugar: </b></span> {{item.lugar}}</p>
+	      <p><b>Periodo: </b></span>{{item.periodo}}</p>
+	    </div>
+	  </div>
+	</div>
+</div>
+<!-- FIN EDUCACIÓN -->
+
+<!-- HABILIDADES -->
+<div class="row">
+	<div class="col s12 m12 l12">
+		<h4>Habilidades</h4>
+      <table class="responsive-table bordered centered">
+        <thead>
+          <tr>
+              <th>Habilidades personales</th>
+              <th>Idiomas</th>
+              <th>Tecnologías de desarrollo</th>
+              <th>Manejo de frameworks</th>
+          </tr>
+        </thead>
+
+        <tbody>
+			<tr ng-repeat="item in tecs">
+	            <td>{{habilidades[$index].habilidad}}</td>
+	            <td>{{idiomas[$index].idioma}}</td>
+	            <td>{{tecs[$index].tec}}</td>
+	            <td>{{frames[$index].frame}}</td>
+	        </tr>
+        </tbody>
+      </table>
+	</div>
+</div>
+<!-- FIN HABILIDADES -->
+

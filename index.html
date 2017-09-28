@@ -2,37 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Nestor</title>
+	<title>Welcome to my CV</title>
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/miEstilo.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body>
-	
-  <div class="col l6">
-    <div class="card horizontal small" id="contenedor">
-      <div class="card-image">
-        <img src="img/profilna.jpg">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">	
-			<p class="flow-text"><b>Sobre 1234</b></p>
-			<span id="descripcion">Soy de lo que no hay.</span>
-        </div>
-        <div class="card-action">
-		    <div class="row" style="text-align: center;">
-			    <div class="col s2 m4"><a href="https://github.com/jokera666" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></div>
-			    <div class="col s2 m4"><a href="https://www.linkedin.com/in/nestor-dobrinov-edrev" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></div>
-			    <div class="col s2 m4"><a href="https://www.facebook.com/nestor.edrev" target="_blank"><i class="fa fa-facebook fa-3x" aria-hidden="true" ></i></a></div>
-  			</div>
-        </div>
-      </div>
-    </div>
-  </div>
+<body ng-app="appCV">
+	<div ng-view></div>
 
+  	 <!-- JavaScript for: jQuery, angular, materialize, and angular-materialize. All of which are needed. -->
 	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular.route.min.js"></script>
 	<script src="js/materialize.min.js"></script>
-	<script src="js/miScript.js"></script>
+	<script src="js/angular-materialize.min.js"></script>
+	<script src="js/appCV.js"></script>
+
+	<script src="controladores/holaController.js"></script>
 </body>
 </html>
