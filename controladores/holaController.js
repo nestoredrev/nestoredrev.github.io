@@ -1,6 +1,6 @@
 angular.module('appCV.contrsHola', [])
 
-.controller('holaCtrl', ['$scope','$rootScope', function($scope,$rootScope){
+.controller('holaCtrl', ['$scope', function($scope){
 
   $scope.personalInfo = {
     nombre:    'Nestor Dobrinov Edrev',
@@ -33,7 +33,7 @@ angular.module('appCV.contrsHola', [])
 
   $scope.experiencia = [
     {
-      oficio: 'Desarrolador de aplicaciones web y apoyo al servicio de comunicación',
+      oficio: 'Desarrollador de aplicaciones web y apoyo al Servicio de Comunicación',
       lugar: 'Universidad Miguel Hernández de Elche',
       periodo: 'Marzo 2016 - Julio 2017'
     },
@@ -52,7 +52,8 @@ angular.module('appCV.contrsHola', [])
   $scope.habilidades = [
       {habilidad: 'Alta capacidad de aprendizaje de nuevas tecnologías'},
       {habilidad: 'Responsabilidad'},
-      {habilidad: 'Don de gente'}
+      {habilidad: 'Sociable'},
+      {habilidad: 'Carnet de conducir'}
   ];
 
 
@@ -77,7 +78,7 @@ angular.module('appCV.contrsHola', [])
     {frame: 'Ionic'},
     {frame: 'AngularJS'},
     {frame: 'jQuery'},
-    {frame: 'Boostrap'},
+    {frame: 'Bootstrap'},
     {frame: 'Materialize'}
   ];
 

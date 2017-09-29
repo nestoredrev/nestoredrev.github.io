@@ -1,8 +1,10 @@
 body{
-	/*background-image: url(../img/matrix.jpg);*/
-	 background-color: #1E90FF;
-	 height: 100%; 
-	 width: 100%; 
+	 background: #5D4157;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(left, #A8CABA, #5D4157);
+     background: -o-linear-gradient(left, #A8CABA, #5D4157);
+     /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, 
+     Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background: linear-gradient(to right, #A8CABA, #5D4157);  
 }
 
 #contenedor{
@@ -14,4 +16,19 @@ body{
 #descripcion{
 	font-family: monospace;
 	margin-left: 15px;
+}
+
+.header{
+	font-family: serif;
+}
+
+#infoPersonal{
+	text-align: center; 
+	display: inline-block; 
+	width: -webkit-fill-available;
+}
+
+#fotoPerfil{
+	max-width: 40%; 
+	display: inherit;
 }
