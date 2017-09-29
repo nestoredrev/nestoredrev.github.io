@@ -1,4 +1,4 @@
-var app = angular.module('appCV',['ui.materialize','ngRoute','appCV.contrsHola']);
+var app = angular.module('appCV',['ui.materialize','ngRoute','appCV.contrsCV']);
 
 app.config(['$locationProvider','$routeProvider',
 	function($locationProvider,$routeProvider){
@@ -8,8 +8,8 @@ app.config(['$locationProvider','$routeProvider',
 		
 		$routeProvider.
 		when('/',{
-			templateUrl: 'plantillas/hola.html',
-			controller: 'holaCtrl'
+			templateUrl: 'plantillas/cv.html',
+			controller: 'cvCtrl'
 		}).
 		otherwise({
 			redirectTo: '/'

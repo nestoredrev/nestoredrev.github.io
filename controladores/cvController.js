@@ -1,6 +1,6 @@
-angular.module('appCV.contrsHola', [])
+angular.module('appCV.contrsCV', [])
 
-.controller('holaCtrl', ['$scope', function($scope){
+.controller('cvCtrl', ['$scope', function($scope){
 
   $scope.personalInfo = {
     nombre:    'Nestor Dobrinov Edrev',
@@ -82,4 +82,4 @@ angular.module('appCV.contrsHola', [])
     {frame: 'Materialize'}
   ];
 
-}]) //Fin holaCtrl
+}]) //Fin cvCtrl
