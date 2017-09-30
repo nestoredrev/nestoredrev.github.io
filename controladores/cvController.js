@@ -1,12 +1,10 @@
 angular.module('appCV.contrsCV', [])
 
-.controller('cvCtrl', ['$scope', function($scope){
+.controller('cvCtrl', ['$scope','$translate', function($scope,$translate){
 
   $scope.personalInfo = {
     nombre:    'Nestor Dobrinov Edrev',
     foto:      'img/fotoPerfil.jpg',
-    oficio:    '<Desarrollador Full-Stack/>',
-    fechaNac:  '09 Septiembre 1990',
     direccion: 'Orihuela (Alicante)',
     telefono:  '+34647154820',
     email:     'nestor.edrev@gmail.com',
@@ -81,5 +79,14 @@ angular.module('appCV.contrsCV', [])
     {frame: 'Bootstrap'},
     {frame: 'Materialize'}
   ];
+
+  //Inicializar el dropdown de idiomas
+  $scope.idioma = 'es';
+  $scope.cambiarIdioma = function(idioma)
+  {
+    console.log(idioma);
+    $scope.idioma = idioma;
+    $translate.use(idioma);
+  }
 
 }]) //Fin cvCtrl

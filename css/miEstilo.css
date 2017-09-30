@@ -26,6 +26,7 @@ body{
 	text-align: center; 
 	display: inline-block; 
 	width: -webkit-fill-available;
+	width: -moz-available;
 }
 
 #fotoPerfil{
