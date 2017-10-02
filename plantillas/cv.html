@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col s12 m12 l12">
-		 <h2 class="header center-align">{{'TITLE' | translate}}</h2>
+		 <h4 class="header center-align">{{'TITLE_HEAD' | translate}}</h4>
 		 	<!-- Dropdown Trigger -->
 			<a class='dropdown-button btn indigo darken-3' data-activates='demoDropdown' style="float: right;" dropdown data-hover="false">
 			    <img src="img/{{idioma}}.png" alt="{{idioma}}"> {{idioma | uppercase}}
@@ -47,10 +47,12 @@
 		<h4 class="header"><i class="fa fa-handshake-o" aria-hidden="true"></i> {{'EXPERIENCE' | translate}}</h4>
 	  <div class="card" ng-repeat="item in experiencia">
 	    <div class="card-content">
-	      <p><span><b>Oficio: </b></span>{{item.oficio}}</p>
-	      <p ng-show="item.lugar.length > 150"><b>Descripción: </b></span> {{item.lugar}}</p>
-	      <p ng-show="item.lugar.length < 150"><b>Lugar: </b></span> {{item.lugar}}</p>
-	      <p><b>Periodo: </b></span>{{item.periodo}}</p>
+	      <p><span><b>{{'POSITION' | translate}}: </b></span>{{'POSITION_DESCRIPTION'+$index | translate}}</p>
+
+	      <p ng-show="item.lugar.length > 150"><b>{{'DESCRIPTION' | translate}}: </b></span> {{'PLACE_DESCRIPTION'+$index | translate}}</p>
+	      <p ng-show="item.lugar.length < 150"><b>{{'PLACE' | translate}}: </b></span> {{'PLACE_DESCRIPTION'+$index | translate}}</p>
+
+	      <p><b>{{'PERIOD' | translate}}: </b></span>{{'PERIOD_DESCRIPTION'+$index | translate}}</p>
 	    </div>
 	  </div>
 	</div>	
@@ -63,9 +65,9 @@
 		<h4 class="header"><i class="fa fa-graduation-cap" aria-hidden="true"></i> {{'EDUCATION' | translate}}</h4>
 	  <div class="card" ng-repeat="item in educacion">
 	    <div class="card-content">
-	      <p><span><b>Titulo: </b></span>{{item.titulo}}</p>
-	      <p><b>Lugar: </b></span> {{item.lugar}}</p>
-	      <p><b>Periodo: </b></span>{{item.periodo}}</p>
+	      <p><span><b>{{'TITLE' | translate}}: </b></span>{{item.titulo}}</p>
+	      <p><b>{{'PLACE' | translate}}: </b></span> {{item.lugar}}</p>
+	      <p><b>{{'PERIOD' | translate}}: </b></span>{{item.periodo}}</p>
 	    </div>
 	  </div>
 	</div>

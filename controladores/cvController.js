@@ -14,6 +14,37 @@ angular.module('appCV.contrsCV', [])
 
   };
 
+  var POSITION_TRANSLATED0 = $translate.instant('POSITION_DESCRIPTION0');
+  var POSITION_TRANSLATED1 = $translate.instant('POSITION_DESCRIPTION1');
+  var POSITION_TRANSLATED2 = $translate.instant('POSITION_DESCRIPTION2');
+
+  var PLACE_TRANSLATED0 = $translate.instant('PLACE_DESCRIPTION0');
+  var PLACE_TRANSLATED1 = $translate.instant('PLACE_DESCRIPTION1');
+  var PLACE_TRANSLATED2 = $translate.instant('PLACE_DESCRIPTION2');
+
+  var PERIOD_TRANSLATED0 = $translate.instant('PERIOD_DESCRIPTION0');
+  var PERIOD_TRANSLATED1 = $translate.instant('PERIOD_DESCRIPTION1');
+  var PERIOD_TRANSLATED2 = $translate.instant('PERIOD_DESCRIPTION2');
+
+  $scope.experiencia = [
+    {
+      oficio:  POSITION_TRANSLATED0,
+      lugar:   PLACE_TRANSLATED0,
+      periodo: PERIOD_TRANSLATED0
+    },
+    {
+      oficio:  POSITION_TRANSLATED1,
+      lugar:   PLACE_TRANSLATED1,
+      periodo: PERIOD_TRANSLATED1
+    },
+    {
+      oficio:  POSITION_TRANSLATED2,
+      lugar:   PLACE_TRANSLATED2,
+      periodo: PERIOD_TRANSLATED2
+    }
+  ];
+
+
   $scope.educacion = [
     { titulo:'Grado en Ingeniería Informática en Tecnologías de la Información',
       lugar: 'Universidad Miguel Hernández de Elche',
@@ -26,24 +57,6 @@ angular.module('appCV.contrsCV', [])
     { titulo:'Ciclo Formativo de Grado Medio de Mantenimiento de productos electrónicos',
       lugar: 'IES El Palmeral Orihuela',
       periodo: '2008 - 2010'
-    }
-  ];
-
-  $scope.experiencia = [
-    {
-      oficio: 'Desarrollador de aplicaciones web y apoyo al Servicio de Comunicación',
-      lugar: 'Universidad Miguel Hernández de Elche',
-      periodo: 'Marzo 2016 - Julio 2017'
-    },
-    {
-      oficio: 'Trabajo fin de grado',
-      lugar: 'Desarrollo de aplicación híbrida para dispositivos móviles orientada en el sector de peluquería y estética. Desarrollo realizado con las tecnologías: Ionic, AngularJS, PHP y MySQL',
-      periodo: 'Octubre 2016 - Julio 2017'
-    },
-    {
-      oficio: 'Becario en desarrollo de aplicaciones nativas para iOS y SmartTV',
-      lugar: 'Aire Networks',
-      periodo: 'Julio 2015 - Octubre 2015'
     }
   ];
 
@@ -84,7 +97,6 @@ angular.module('appCV.contrsCV', [])
   $scope.idioma = 'es';
   $scope.cambiarIdioma = function(idioma)
   {
-    console.log(idioma);
     $scope.idioma = idioma;
     $translate.use(idioma);
   }

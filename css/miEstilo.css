@@ -7,11 +7,6 @@ body{
      background: linear-gradient(to right, #A8CABA, #5D4157);  
 }
 
-#contenedor{
-	width: 850px;
-	margin: 0 auto;
-	top: 50px;
-}
 
 #descripcion{
 	font-family: monospace;
@@ -27,6 +22,7 @@ body{
 	display: inline-block; 
 	width: -webkit-fill-available;
 	width: -moz-available;
+	width: 100%;
 }
 
 #fotoPerfil{
