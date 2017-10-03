@@ -65,8 +65,8 @@
 		<h4 class="header"><i class="fa fa-graduation-cap" aria-hidden="true"></i> {{'EDUCATION' | translate}}</h4>
 	  <div class="card" ng-repeat="item in educacion">
 	    <div class="card-content">
-	      <p><span><b>{{'TITLE' | translate}}: </b></span>{{item.titulo}}</p>
-	      <p><b>{{'PLACE' | translate}}: </b></span> {{item.lugar}}</p>
+	      <p><span><b>{{'TITLE' | translate}}: </b></span>{{'TITLE_DESCRIPTION'+$index | translate}}</p>
+	      <p><b>{{'PLACE' | translate}}: </b></span>{{'TITLE_PLACE'+$index | translate}}</p>
 	      <p><b>{{'PERIOD' | translate}}: </b></span>{{item.periodo}}</p>
 	    </div>
 	  </div>
@@ -81,17 +81,21 @@
       <table class="responsive-table bordered centered">
         <thead>
           <tr>
-              <th>Habilidades personales</th>
-              <th>Idiomas</th>
-              <th>Tecnologías de desarrollo</th>
-              <th>Manejo de frameworks</th>
+              <th>{{'PERSONAL_SKILLS' | translate}}</th>
+              <th>{{'LANGUAGES' | translate}}</th>
+              <th>{{'DEV_TECH' | translate}}</th>
+              <th>{{'USE_FRAME' | translate}}</th>
           </tr>
         </thead>
 
         <tbody>
 			<tr ng-repeat="item in tecs">
-	            <td>{{habilidades[$index].habilidad}}</td>
-	            <td>{{idiomas[$index].idioma}}</td>
+	            <!-- <td>{{habilidades[$index].habilidad}}</td> -->
+	            <td ng-show="habilidades[$index].habilidad != null">{{'SKILL_DESCRIPTION'+$index | translate}}</td>
+	           	<td ng-show="habilidades[$index].habilidad == null"></td>
+	            <!-- <td>{{idiomas[$index].idioma}}</td> -->
+	           	<td ng-show="idiomas[$index].idioma != null">{{'LANG_DESCRIPTION'+$index | translate}}</td>
+	           	<td ng-show="idiomas[$index].idioma == null"></td>
 	            <td>{{tecs[$index].tec}}</td>
 	            <td>{{frames[$index].frame}}</td>
 	        </tr>

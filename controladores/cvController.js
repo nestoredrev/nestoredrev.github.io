@@ -45,33 +45,50 @@ angular.module('appCV.contrsCV', [])
   ];
 
 
+  var TITLE_TRANSLATED0 = $translate.instant('TITLE_DESCRIPTION0');
+  var TITLE_TRANSLATED1 = $translate.instant('TITLE_DESCRIPTION1');
+  var TITLE_TRANSLATED2 = $translate.instant('TITLE_DESCRIPTION2');
+
+  var TITLE_PLACE_TRANSLATED0 = $translate.instant('TITLE_PLACE0');
+  var TITLE_PLACE_TRANSLATED1 = $translate.instant('TITLE_PLACE1');
+  var TITLE_PLACE_TRANSLATED2 = $translate.instant('TITLE_PLACE2');
+
   $scope.educacion = [
-    { titulo:'Grado en Ingeniería Informática en Tecnologías de la Información',
-      lugar: 'Universidad Miguel Hernández de Elche',
+    { titulo: TITLE_TRANSLATED0,
+      lugar:  TITLE_PLACE_TRANSLATED0,
       periodo: '2012 - 2017'
     },
-    { titulo:'Ciclo Formativo de Grado Superior de Desarrollo de productos electrónicos',
-      lugar: 'IES El Palmeral Orihuela',
+    { titulo: TITLE_TRANSLATED1,
+      lugar:  TITLE_PLACE_TRANSLATED1,
       periodo: '2010 - 2012'
     },
-    { titulo:'Ciclo Formativo de Grado Medio de Mantenimiento de productos electrónicos',
-      lugar: 'IES El Palmeral Orihuela',
+    { titulo: TITLE_TRANSLATED2,
+      lugar:  TITLE_PLACE_TRANSLATED2,
       periodo: '2008 - 2010'
     }
   ];
 
+  var SKILL_TRANSLATED0 = $translate.instant('SKILL_DESCRIPTION0');
+  var SKILL_TRANSLATED1 = $translate.instant('SKILL_DESCRIPTION1');
+  var SKILL_TRANSLATED2 = $translate.instant('SKILL_DESCRIPTION2');
+  var SKILL_TRANSLATED3 = $translate.instant('SKILL_DESCRIPTION3');
+
   $scope.habilidades = [
-      {habilidad: 'Alta capacidad de aprendizaje de nuevas tecnologías'},
-      {habilidad: 'Responsabilidad'},
-      {habilidad: 'Sociable'},
-      {habilidad: 'Carnet de conducir'}
+      {habilidad: SKILL_TRANSLATED0},
+      {habilidad: SKILL_TRANSLATED1},
+      {habilidad: SKILL_TRANSLATED2},
+      {habilidad: SKILL_TRANSLATED3}
   ];
 
 
+  var LANG_TRANSLATED0 = $translate.instant('LANG_DESCRIPTION0');
+  var LANG_TRANSLATED1 = $translate.instant('LANG_DESCRIPTION1');
+  var LANG_TRANSLATED2 = $translate.instant('LANG_DESCRIPTION2');
+
   $scope.idiomas = [
-    {idioma: 'Búlgaro (Materno)'},
-    {idioma: 'Español (Nativo)'},
-    {idioma: 'Inglés (Nivel A2)'}
+    {idioma: LANG_TRANSLATED0},
+    {idioma: LANG_TRANSLATED1},
+    {idioma: LANG_TRANSLATED2}
   ];
 
   $scope.tecs = [
