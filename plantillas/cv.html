@@ -90,16 +90,15 @@
 
         <tbody>
 			<tr ng-repeat="item in tecs">
-	            <!-- <td>{{habilidades[$index].habilidad}}</td> -->
 	            <td ng-show="habilidades[$index].habilidad != null">{{'SKILL_DESCRIPTION'+$index | translate}}</td>
 	           	<td ng-show="habilidades[$index].habilidad == null"></td>
-	            <!-- <td>{{idiomas[$index].idioma}}</td> -->
 	           	<td ng-show="idiomas[$index].idioma != null">{{'LANG_DESCRIPTION'+$index | translate}}</td>
 	           	<td ng-show="idiomas[$index].idioma == null"></td>
 	            <td>{{tecs[$index].tec}}</td>
 	            <td>{{frames[$index].frame}}</td>
 	        </tr>
         </tbody>
+        
       </table>
 	</div>
 </div>
