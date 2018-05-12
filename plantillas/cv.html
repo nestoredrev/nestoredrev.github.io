@@ -18,23 +18,36 @@
 	         <img materialboxed class="materialboxed responsive-img" width="650" src="{{personalInfo.foto}}" alt="fotoDePerfil" title="Ver foto">
 	      </div>
 	      <div class="card-stacked">
-	        <div class="card-content">	
+	        <div class="card-content">
 				<p class="flow-text"><b>{{personalInfo.nombre}}</b></p>
 				<span>{{'DEV' | translate}}</span>
 				<br><br>
-				<i class="fa fa-birthday-cake" aria-hidden="true"></i><span id="descripcion">{{'MONTH' | translate}}</span>
-				<br>
-				<i class="fa fa-home" aria-hidden="true"></i><span id="descripcion">{{personalInfo.direccion}}</span>
-				<br>
-				<i class="fa fa-phone" aria-hidden="true"></i><a id="descripcion" href="tel:{{personalInfo.telefono}}" target="_blank">{{personalInfo.telefono}}</a>
-				<br>
-				<i class="fa fa-envelope" aria-hidden="true"></i><a id="descripcion" href="mailto:{{personalInfo.email}}" target="_blank">{{personalInfo.email}}</a>
-				<br>
-				<i class="fa fa-skype" aria-hidden="true"></i><span id="descripcion">{{personalInfo.skype}}</span>
-				<br>
-				<i class="fa fa-github" aria-hidden="true"></i><a id="descripcion"href="{{personalInfo.github}}" target="_blank">{{personalInfo.github}}</a>
-				<br>
-				<i class="fa fa-linkedin" aria-hidden="true"></i><a id="descripcion" href="{{personalInfo.linkedin}}" target="_blank">{{personalInfo.linkedin}}</a>
+				<ul class="collection">
+			      <li class="collection-item">
+			      	<i class="fa fa-birthday-cake" aria-hidden="true"></i><span id="descripcion">{{'MONTH' | translate}}</span>
+			      </li>
+			      <li class="collection-item">
+			      	<i class="fa fa-home" aria-hidden="true"></i><span id="descripcion">{{personalInfo.direccion}}</span>
+			      </li>
+			      <li class="collection-item">
+			      	<i class="fa fa-phone" aria-hidden="true"></i><a id="descripcion" href="tel:{{personalInfo.telefono}}" target="_blank">{{personalInfo.telefono}}</a>
+			      </li>
+			      <li class="collection-item">
+			      	<i class="fa fa-envelope" aria-hidden="true"></i><a id="descripcion" href="mailto:{{personalInfo.email}}" target="_blank">{{personalInfo.email}}</a>
+			      </li>
+			      <li class="collection-item">
+					<i class="fa fa-skype" aria-hidden="true"></i><span id="descripcion">{{personalInfo.skype}}</span>
+			      </li>
+			      <li class="collection-item">
+					<i class="fa fa-github" aria-hidden="true"></i><a id="descripcion"href="{{personalInfo.github0}}" target="_blank">{{personalInfo.github0}}</a>
+			      </li>
+			      <li class="collection-item">
+					<i class="fa fa-github" aria-hidden="true"></i><a id="descripcion"href="{{personalInfo.github1}}" target="_blank">{{personalInfo.github1}}</a>
+			      </li>
+			      <li class="collection-item">
+					<i class="fa fa-linkedin" aria-hidden="true"></i><a id="descripcion" href="{{personalInfo.linkedin}}" target="_blank">{{personalInfo.linkedin}}</a> 
+			      </li>
+			    </ul>
 	        </div>
 	      </div>
 	    </div>
@@ -49,8 +62,12 @@
 	    <div class="card-content">
 	      <p><span><b>{{'POSITION' | translate}}: </b></span>{{'POSITION_DESCRIPTION'+$index | translate}}</p>
 
-	      <p ng-show="item.lugar.length > 150"><b>{{'DESCRIPTION' | translate}}: </b></span> {{'PLACE_DESCRIPTION'+$index | translate}}</p>
-	      <p ng-show="item.lugar.length < 150"><b>{{'PLACE' | translate}}: </b></span> {{'PLACE_DESCRIPTION'+$index | translate}}</p>
+	      <p ng-show="item.lugar.length > 150">
+	      	<b>{{'DESCRIPTION' | translate}}:</b> {{'PLACE_DESCRIPTION'+$index | translate}}
+	      </p>
+	      <p ng-show="item.lugar.length < 150">
+	      	<b>{{'PLACE' | translate}}:</b> <a href="{{item.lugarUrl}}" target="_blank"> {{'PLACE_DESCRIPTION'+$index | translate}} </a>
+	      </p>
 
 	      <p><b>{{'PERIOD' | translate}}: </b></span>{{'PERIOD_DESCRIPTION'+$index | translate}}</p>
 	    </div>
@@ -66,8 +83,8 @@
 	  <div class="card" ng-repeat="item in educacion">
 	    <div class="card-content">
 	      <p><span><b>{{'TITLE' | translate}}: </b></span>{{'TITLE_DESCRIPTION'+$index | translate}}</p>
-	      <p><b>{{'PLACE' | translate}}: </b></span>{{'TITLE_PLACE'+$index | translate}}</p>
-	      <p><b>{{'PERIOD' | translate}}: </b></span>{{item.periodo}}</p>
+	      <p><b>{{'PLACE' | translate}}:</b> {{'TITLE_PLACE'+$index | translate}}</p>
+	      <p><b>{{'PERIOD' | translate}}:</b> {{item.periodo}}</p>
 	    </div>
 	  </div>
 	</div>

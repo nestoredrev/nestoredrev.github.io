@@ -9,7 +9,8 @@ angular.module('appCV.contrsCV', [])
     telefono:  '+34647154820',
     email:     'nestor.edrev@gmail.com',
     skype:     'dokich',
-    github:    'https://github.com/jokera666',
+    github0:    'https://github.com/nestoredrev',
+    github1:    'https://github.com/jokera666',
     linkedin:  'https://www.linkedin.com/in/nestor-dobrinov-edrev/'
 
   };
@@ -17,30 +18,41 @@ angular.module('appCV.contrsCV', [])
   var POSITION_TRANSLATED0 = $translate.instant('POSITION_DESCRIPTION0');
   var POSITION_TRANSLATED1 = $translate.instant('POSITION_DESCRIPTION1');
   var POSITION_TRANSLATED2 = $translate.instant('POSITION_DESCRIPTION2');
+  var POSITION_TRANSLATED3 = $translate.instant('POSITION_DESCRIPTION3');
 
   var PLACE_TRANSLATED0 = $translate.instant('PLACE_DESCRIPTION0');
   var PLACE_TRANSLATED1 = $translate.instant('PLACE_DESCRIPTION1');
   var PLACE_TRANSLATED2 = $translate.instant('PLACE_DESCRIPTION2');
+  var PLACE_TRANSLATED3 = $translate.instant('PLACE_DESCRIPTION3');
 
   var PERIOD_TRANSLATED0 = $translate.instant('PERIOD_DESCRIPTION0');
   var PERIOD_TRANSLATED1 = $translate.instant('PERIOD_DESCRIPTION1');
   var PERIOD_TRANSLATED2 = $translate.instant('PERIOD_DESCRIPTION2');
+  var PERIOD_TRANSLATED3 = $translate.instant('PERIOD_DESCRIPTION3');
 
   $scope.experiencia = [
     {
       oficio:  POSITION_TRANSLATED0,
       lugar:   PLACE_TRANSLATED0,
-      periodo: PERIOD_TRANSLATED0
+      periodo: PERIOD_TRANSLATED0,
+      lugarUrl: 'http://scorpora.eu/'
     },
     {
       oficio:  POSITION_TRANSLATED1,
       lugar:   PLACE_TRANSLATED1,
-      periodo: PERIOD_TRANSLATED1
+      periodo: PERIOD_TRANSLATED1,
+      lugarUrl: 'http://umh.es/'
     },
     {
       oficio:  POSITION_TRANSLATED2,
       lugar:   PLACE_TRANSLATED2,
       periodo: PERIOD_TRANSLATED2
+    },
+    {
+      oficio:  POSITION_TRANSLATED3,
+      lugar:   PLACE_TRANSLATED3,
+      periodo: PERIOD_TRANSLATED3,
+      lugarUrl: 'http://www.airenetworks.es/' 
     }
   ];
 
