@@ -7,8 +7,23 @@ body{
      background: linear-gradient(to right, #A8CABA, #5D4157);  
 }
 
+.row{
+	margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 20px;
+}
 
-#descripcion{
+#fotoPerfil img {
+    max-width: 80%;
+    margin: 0 auto;
+    box-shadow: black;
+    border-radius: 50%;
+    border: 1px solid #888888;
+    margin-top: 15px;
+    box-shadow: 4px 4px #888888;
+}
+
+.descripcion{
 	font-family: monospace;
 	margin-left: 15px;
 }

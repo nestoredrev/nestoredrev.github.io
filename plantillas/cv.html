@@ -15,7 +15,7 @@
 	    <div class="card horizontal" id="infoPersonal">
 
 	      <div class="card-image" id="fotoPerfil">
-	         <img materialboxed class="materialboxed responsive-img" width="650" src="{{personalInfo.foto}}" alt="fotoDePerfil" title="Ver foto">
+	         <img materialboxed class="materialboxed responsive-img" src="{{personalInfo.foto}}" alt="fotoDePerfil" title="Ver foto">
 	      </div>
 	      <div class="card-stacked">
 	        <div class="card-content">
@@ -24,28 +24,31 @@
 				<br><br>
 				<ul class="collection">
 			      <li class="collection-item">
-			      	<i class="fa fa-birthday-cake" aria-hidden="true"></i><span id="descripcion">{{'MONTH' | translate}}</span>
+			      	<i class="fa fa-birthday-cake" aria-hidden="true"></i><span class="descripcion">{{'MONTH' | translate}}</span>
 			      </li>
 			      <li class="collection-item">
-			      	<i class="fa fa-home" aria-hidden="true"></i><span id="descripcion">{{personalInfo.direccion}}</span>
+			      	<i class="fa fa-home" aria-hidden="true"></i><span class="descripcion">{{personalInfo.direccion}}</span>
 			      </li>
 			      <li class="collection-item">
-			      	<i class="fa fa-phone" aria-hidden="true"></i><a id="descripcion" href="tel:{{personalInfo.telefono}}" target="_blank">{{personalInfo.telefono}}</a>
+			      	<i class="fa fa-phone" aria-hidden="true"></i><a class="descripcion" href="tel:{{personalInfo.telefono}}" target="_blank">{{personalInfo.telefono}}</a>
 			      </li>
 			      <li class="collection-item">
-			      	<i class="fa fa-envelope" aria-hidden="true"></i><a id="descripcion" href="mailto:{{personalInfo.email}}" target="_blank">{{personalInfo.email}}</a>
+			      	<i class="fa fa-envelope" aria-hidden="true"></i><a class="descripcion" href="mailto:{{personalInfo.email}}" target="_blank">{{personalInfo.email}}</a>
 			      </li>
 			      <li class="collection-item">
-					<i class="fa fa-skype" aria-hidden="true"></i><span id="descripcion">{{personalInfo.skype}}</span>
+					<i class="fa fa-skype" aria-hidden="true"></i><span class="descripcion">{{personalInfo.skype}}</span>
 			      </li>
 			      <li class="collection-item">
-					<i class="fa fa-github" aria-hidden="true"></i><a id="descripcion"href="{{personalInfo.github0}}" target="_blank">{{personalInfo.github0}}</a>
+					<i class="fa fa-github" aria-hidden="true"></i><a class="descripcion"href="{{personalInfo.github0}}" target="_blank">{{personalInfo.github0}}</a>
 			      </li>
 			      <li class="collection-item">
-					<i class="fa fa-github" aria-hidden="true"></i><a id="descripcion"href="{{personalInfo.github1}}" target="_blank">{{personalInfo.github1}}</a>
+					<i class="fa fa-github" aria-hidden="true"></i><a class="descripcion"href="{{personalInfo.github1}}" target="_blank">{{personalInfo.github1}}</a>
 			      </li>
 			      <li class="collection-item">
-					<i class="fa fa-linkedin" aria-hidden="true"></i><a id="descripcion" href="{{personalInfo.linkedin}}" target="_blank">{{personalInfo.linkedin}}</a> 
+					<i class="fa fa-linkedin" aria-hidden="true"></i><a class="descripcion" href="{{personalInfo.linkedin}}" target="_blank">{{personalInfo.linkedin}}</a> 
+			      </li>
+			      <li class="collection-item">
+					<i class="fa fa-steam" aria-hidden="true"></i><a class="descripcion" href="{{personalInfo.steam}}" target="_blank">{{personalInfo.steam}}</a> 
 			      </li>
 			    </ul>
 	        </div>
@@ -120,4 +123,3 @@
 	</div>
 </div>
 <!-- FIN HABILIDADES -->
-
