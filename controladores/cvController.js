@@ -21,6 +21,8 @@ angular.module('appCV.contrsCV', [])
   var POSITION_TRANSLATED3 = $translate.instant('POSITION_DESCRIPTION3');
   var POSITION_TRANSLATED4 = $translate.instant('POSITION_DESCRIPTION4');
   var POSITION_TRANSLATED5 = $translate.instant('POSITION_DESCRIPTION5');
+  var POSITION_TRANSLATED6 = $translate.instant('POSITION_DESCRIPTION6');
+  var POSITION_TRANSLATED7 = $translate.instant('POSITION_DESCRIPTION7');
 
   var PLACE_TRANSLATED0 = $translate.instant('PLACE_DESCRIPTION0');
   var PLACE_TRANSLATED1 = $translate.instant('PLACE_DESCRIPTION1');
@@ -28,6 +30,8 @@ angular.module('appCV.contrsCV', [])
   var PLACE_TRANSLATED3 = $translate.instant('PLACE_DESCRIPTION3');
   var PLACE_TRANSLATED4 = $translate.instant('PLACE_DESCRIPTION4');
   var PLACE_TRANSLATED5 = $translate.instant('PLACE_DESCRIPTION5');
+  var PLACE_TRANSLATED6 = $translate.instant('PLACE_DESCRIPTION6');
+  var PLACE_TRANSLATED7 = $translate.instant('PLACE_DESCRIPTION7');
 
   var PERIOD_TRANSLATED0 = $translate.instant('PERIOD_DESCRIPTION0');
   var PERIOD_TRANSLATED1 = $translate.instant('PERIOD_DESCRIPTION1');
@@ -35,41 +39,55 @@ angular.module('appCV.contrsCV', [])
   var PERIOD_TRANSLATED3 = $translate.instant('PERIOD_DESCRIPTION3');
   var PERIOD_TRANSLATED4 = $translate.instant('PERIOD_DESCRIPTION4');
   var PERIOD_TRANSLATED5 = $translate.instant('PERIOD_DESCRIPTION5');
+  var PERIOD_TRANSLATED6 = $translate.instant('PERIOD_DESCRIPTION6');
+  var PERIOD_TRANSLATED7 = $translate.instant('PERIOD_DESCRIPTION7');
 
   $scope.experiencia = [
     {
       oficio:  POSITION_TRANSLATED0,
       lugar:   PLACE_TRANSLATED0,
       periodo: PERIOD_TRANSLATED0,
-      lugarUrl: 'https://visualtis.com/'
+      lugarUrl: 'https://grupooesia.com/'
     },
     {
       oficio:  POSITION_TRANSLATED1,
       lugar:   PLACE_TRANSLATED1,
       periodo: PERIOD_TRANSLATED1,
-      lugarUrl: 'https://www.stratebi.com/'
+      lugarUrl: 'https://es.nttdata.com/'
     },
     {
       oficio:  POSITION_TRANSLATED2,
       lugar:   PLACE_TRANSLATED2,
       periodo: PERIOD_TRANSLATED2,
-      lugarUrl: 'http://scorpora.eu/'
+      lugarUrl: 'https://visualtis.com/'
     },
     {
       oficio:  POSITION_TRANSLATED3,
       lugar:   PLACE_TRANSLATED3,
       periodo: PERIOD_TRANSLATED3,
-      lugarUrl: 'http://umh.es/'
+      lugarUrl: 'https://www.stratebi.com/'
     },
     {
       oficio:  POSITION_TRANSLATED4,
       lugar:   PLACE_TRANSLATED4,
-      periodo: PERIOD_TRANSLATED4
+      periodo: PERIOD_TRANSLATED4,
+      lugarUrl: 'http://scorpora.eu/'
     },
     {
       oficio:  POSITION_TRANSLATED5,
       lugar:   PLACE_TRANSLATED5,
       periodo: PERIOD_TRANSLATED5,
+      lugarUrl: 'http://umh.es/'
+    },
+    {
+      oficio:  POSITION_TRANSLATED6,
+      lugar:   PLACE_TRANSLATED6,
+      periodo: PERIOD_TRANSLATED6
+    },
+    {
+      oficio:  POSITION_TRANSLATED7,
+      lugar:   PLACE_TRANSLATED7,
+      periodo: PERIOD_TRANSLATED7,
       lugarUrl: 'http://www.airenetworks.es/' 
     }
   ];
@@ -125,21 +143,21 @@ angular.module('appCV.contrsCV', [])
     {tec:'HTML'},
     {tec:'CSS'},
     {tec:'JavaScript'},
-    {tec:'PHP'},
+    {tec:'rxJS'},
     {tec:'MySQL'},
+    {tec:'MongoDB'},
     {tec:'JSON'},
     {tec:'C,C++'},
-    {tec:'Git'},
-    {tec:'Pentaho CDE'}
+    {tec:'Git'}
   ];
 
   $scope.frames = [
-    {frame: 'Ionic'},
     {frame: 'Angular'},
-    {frame: 'Nodejs'},
-    {frame: 'jQuery'},
+    {frame: 'Angular Material'},
     {frame: 'Bootstrap'},
-    {frame: 'Materialize'}
+    {frame: 'Ionic'},
+    {frame: 'Nodejs (Express)'},
+    {frame: 'Tailwindcss'},
   ];
 
   //Inicializar el dropdown de idiomas

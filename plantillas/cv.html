@@ -2,9 +2,13 @@
 	<div class="col s12 m12 l12">
 		 <h4 class="header center-align">{{'TITLE_HEAD' | translate}}</h4>
 		 	<!-- Dropdown Trigger -->
-			<a class='dropdown-button btn indigo darken-3' data-activates='demoDropdown' style="float: right;" dropdown data-hover="false">
-			    <img src="img/{{idioma}}.png" alt="{{idioma}}"> {{idioma | uppercase}}
-			</a>
+			<div class="row">
+				<div class="col right">
+					<a class='dropdown-button btn indigo darken-3' data-activates='demoDropdown' style="float: right;" dropdown data-hover="false">
+						<img src="img/{{idioma}}.png" alt="{{idioma}}"> {{idioma | uppercase}}
+					</a>
+				</div>
+			</div>
 
 			<!-- Dropdown Structure -->
 			<ul id='demoDropdown' class='dropdown-content' >
@@ -12,48 +16,44 @@
 			    <li><a ng-click="cambiarIdioma('en');"><img src="img/en.png" alt="en"> EN</a></li>
 			    <li><a ng-click="cambiarIdioma('bg');"><img src="img/bg.png" alt="bg"> BG</a></li>
 			</ul>
-	    <div class="card horizontal" id="infoPersonal">
 
-	      <div class="card-image" id="fotoPerfil">
-	         <img materialboxed class="materialboxed responsive-img" src="{{personalInfo.foto}}" alt="fotoDePerfil" title="Ver foto">
-	      </div>
-	      <div class="card-stacked">
-	        <div class="card-content">
-				<p class="flow-text"><b>{{personalInfo.nombre}}</b></p>
-				<span>{{'DEV' | translate}}</span>
-				<br><br>
-				<ul class="collection">
-			      <li class="collection-item">
-			      	<i class="fa fa-birthday-cake" aria-hidden="true"></i><span class="descripcion">{{'MONTH' | translate}}</span>
-			      </li>
-			      <li class="collection-item">
-			      	<i class="fa fa-home" aria-hidden="true"></i><span class="descripcion">{{personalInfo.direccion}}</span>
-			      </li>
-			      <li class="collection-item">
-			      	<i class="fa fa-phone" aria-hidden="true"></i><a class="descripcion" href="tel:{{personalInfo.telefono}}" target="_blank">{{personalInfo.telefono}}</a>
-			      </li>
-			      <li class="collection-item">
-			      	<i class="fa fa-envelope" aria-hidden="true"></i><a class="descripcion" href="mailto:{{personalInfo.email}}" target="_blank">{{personalInfo.email}}</a>
-			      </li>
-			      <li class="collection-item">
-					<i class="fa fa-skype" aria-hidden="true"></i><span class="descripcion">{{personalInfo.skype}}</span>
-			      </li>
-			      <li class="collection-item">
-					<i class="fa fa-github" aria-hidden="true"></i><a class="descripcion"href="{{personalInfo.github0}}" target="_blank">{{personalInfo.github0}}</a>
-			      </li>
-			      <li class="collection-item">
-					<i class="fa fa-github" aria-hidden="true"></i><a class="descripcion"href="{{personalInfo.github1}}" target="_blank">{{personalInfo.github1}}</a>
-			      </li>
-			      <li class="collection-item">
-					<i class="fa fa-linkedin" aria-hidden="true"></i><a class="descripcion" href="{{personalInfo.linkedin}}" target="_blank">{{personalInfo.linkedin}}</a> 
-			      </li>
-			      <li class="collection-item">
-					<i class="fa fa-steam" aria-hidden="true"></i><a class="descripcion" href="{{personalInfo.steam}}" target="_blank">{{personalInfo.steam}}</a> 
-			      </li>
-			    </ul>
-	        </div>
-	      </div>
-	    </div>
+			
+			<div class="row">
+				<div class="center-col">
+					<div class="card-image" id="fotoPerfil">
+					   <img materialboxed class="materialboxed" src="{{personalInfo.foto}}" alt="fotoDePerfil" title="Ver foto">
+					</div>
+				</div>
+				<div class="center-col center-align">
+					<div class="card-stacked">
+					  <div class="card-content">
+						  <p class="flow-text"><b>{{personalInfo.nombre}}</b></p>
+						  <span>{{'DEV' | translate}}</span>
+						  <br><br>
+						  <ul class="collection">
+							<li class="collection-item">
+								<i class="fa fa-birthday-cake" aria-hidden="true"></i><span class="descripcion">{{'MONTH' | translate}}</span>
+							</li>
+							<li class="collection-item">
+								<i class="fa fa-home" aria-hidden="true"></i><span class="descripcion">{{personalInfo.direccion}}</span>
+							</li>
+							<li class="collection-item">
+								<i class="fa fa-phone" aria-hidden="true"></i><a class="descripcion" href="tel:{{personalInfo.telefono}}" target="_blank">{{personalInfo.telefono}}</a>
+							</li>
+							<li class="collection-item">
+								<i class="fa fa-envelope" aria-hidden="true"></i><a class="descripcion" href="mailto:{{personalInfo.email}}" target="_blank">{{personalInfo.email}}</a>
+							</li>
+							<li class="collection-item">
+							  <i class="fa fa-github" aria-hidden="true"></i><a class="descripcion"href="{{personalInfo.github0}}" target="_blank">{{personalInfo.github0}}</a>
+							</li>
+							<li class="collection-item">
+							  <i class="fa fa-linkedin" aria-hidden="true"></i><a class="descripcion" href="{{personalInfo.linkedin}}" target="_blank">{{personalInfo.linkedin}}</a> 
+							</li>
+						  </ul>
+					  </div>
+					</div>
+				</div>
+			</div>
 	</div>
 </div>
 
