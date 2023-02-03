@@ -6,7 +6,6 @@ angular.module('appCV.contrsCV', [])
     nombre:    'Nestor Dobrinov Edrev',
     foto:      'img/fotoPerfil.jpg',
     direccion: 'Orihuela (Alicante)',
-    telefono:  '+34647154820',
     email:     'nestor.edrev@gmail.com',
     skype:     'dokich',
     github0:    'https://github.com/nestoredrev',
