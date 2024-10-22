@@ -101,6 +101,24 @@
 </div>
 <!-- FIN EDUCACIÓN -->
 
+<!-- CURSOS Y CERTIFICADOS -->
+<div class="row">
+	<h4 class="header"><i class="fa fa-certificate" aria-hidden="true"></i> {{'CERTIFICATE' | translate}}</h4>
+    <div class="col s12 m6 l3" ng-repeat="item in certification">
+      <div class="card">
+        <div class="card-image">
+          <img materialboxed class="materialboxed" src="{{'img/cerf'+$index+'.jpg'}}" alt="foto de certificado">
+        </div>
+        <div class="card-content">
+          <p>{{'CERF_DESCRIPTION'+$index | translate}}</p>
+		  <p><a href="{{item.url_curso}}" target="_blank">{{item.url_curso}}</a></p>
+		  <p><a href="{{item.url_github}}" target="_blank">{{item.url_github}}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN CURSOS Y CERTIFICADOS -->
+
 <!-- HABILIDADES -->
 <div class="row">
 	<div class="col s12 m12 l12">

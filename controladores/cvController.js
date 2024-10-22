@@ -115,6 +115,40 @@ angular.module('appCV.contrsCV', [])
     }
   ];
 
+  var TITLE_CERF_DESCRIPTION0 = $translate.instant('CERF_DESCRIPTION0');
+  var TITLE_CERF_DESCRIPTION1 = $translate.instant('CERF_DESCRIPTION1');
+  var TITLE_CERF_DESCRIPTION2 = $translate.instant('CERF_DESCRIPTION2');
+  var TITLE_CERF_DESCRIPTION3 = $translate.instant('CERF_DESCRIPTION3');
+  var TITLE_CERF_DESCRIPTION4 = $translate.instant('CERF_DESCRIPTION4');
+
+  $scope.certification = [
+    { 
+      descripcion: TITLE_CERF_DESCRIPTION0,
+      url_github: 'https://github.com/nestoredrev/BackEnd-OpenAI',
+      url_curso: 'https://www.udemy.com/course/angular-nest-openai/'
+    },
+    { 
+      descripcion: TITLE_CERF_DESCRIPTION1,
+      url_github: 'https://github.com/nestoredrev/Rxjs-School',
+      url_curso: 'https://www.udemy.com/course/rxjs-nivel-pro/'
+    },
+    { 
+      descripcion: TITLE_CERF_DESCRIPTION2,
+      url_github: 'https://github.com/nestoredrev/socket-chat-backend',
+      url_curso: 'https://www.udemy.com/course/node-de-cero-a-experto/'
+    },
+    { 
+      descripcion: TITLE_CERF_DESCRIPTION3,
+      url_github: 'https://github.com/nestoredrev/AdminPro-Angular',
+      url_curso: 'https://www.udemy.com/course/angular-2-fernando-herrera/'
+    },
+    { 
+      descripcion: TITLE_CERF_DESCRIPTION4,
+      url_github: 'https://github.com/nestoredrev/AdminPro-Angular',
+      url_curso: 'https://www.udemy.com/course/angular-avanzado-fernando-herrera/'
+    }
+  ];
+
   var SKILL_TRANSLATED0 = $translate.instant('SKILL_DESCRIPTION0');
   var SKILL_TRANSLATED1 = $translate.instant('SKILL_DESCRIPTION1');
   var SKILL_TRANSLATED2 = $translate.instant('SKILL_DESCRIPTION2');
